@@ -1,0 +1,14 @@
+
+spring:
+  application:
+    name: dubbo-provide
+dubbo:
+  application:
+    name: ${spring.application.name}
+  registry:
+    address: nacos://182.92.173.85:8848
+  scan:
+    base-packages: com.yuan.www
+  protocol:
+    name: dubbo
+    port: 20881
